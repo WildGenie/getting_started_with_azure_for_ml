@@ -55,11 +55,11 @@ if __name__ == '__main__':
                         epochs=10)
 
     print('Saving model history...')
-    with open(f'outputs/model.history', 'wb') as f:
+    with open('outputs/model.history', 'wb') as f:
         pickle.dump(history.history, f)
 
     print('Saving model...')
-    model.save(f'outputs/')
+    model.save('outputs/')
 
     print('Done!')
     print('-'*100)
